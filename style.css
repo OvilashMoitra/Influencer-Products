@@ -1,0 +1,31 @@
+/*--------------------------------
+         Nav Bar Style 
+ ---------------------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo {
+    margin-left: 8em;
+}
+nav .logo h2{
+    font-family: 'Be Vietnam Pro';
+}
+.menu {
+    margin-right: 5em;
+    line-height: 2;
+}    
+nav .menu ul{
+   list-style-type: none;
+}
+nav .menu ul li{
+    display: inline-block;
+    margin-right: 2em;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 500;
+}
