@@ -1,3 +1,6 @@
+*{
+    font-family: 'Be Vietnam Pro'; 
+}
 /*--------------------------------
          Nav Bar Style 
  ---------------------------------*/
@@ -29,3 +32,82 @@ nav .menu ul li a{
     font-family: 'Be Vietnam Pro';
     font-weight: 500;
 }
+/*--------------------------------
+         Main Section Style 
+ ---------------------------------*/
+ main{
+     display: flex;
+     justify-content: center;
+     margin-top: 10em;
+ }
+ main .text{
+     width: 35%;
+     margin-right: 14em;
+     margin-left: -2em;
+ }
+ main .text h1{
+     font-size: 2em;
+ }
+ main .text a{
+     background-color: #E02C6D;
+     text-decoration: none;
+     border-radius: 41px;
+     display: inline-block;
+     padding: .8em 1.5em;
+     color: #fff;
+     
+ }
+ main .image{
+    
+ }
+ main .image img{
+     background-image: url(images/Circle\ design.svg);
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 120%;
+     margin-top: -4em;
+ }
+/*--------------------------------
+        Products Section Style 
+ ---------------------------------*/
+ .products{
+    margin-top: 5em;
+ }
+ .products> h1{
+    text-align: center;
+    margin-bottom: 2em;
+ }
+ .products .product-collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 2em;
+    margin-left: 8.5em;
+ }
+ .product{
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+    height: 476px;
+    width: 329px;
+ }
+ .product img{
+    text-align: center;
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+ }
+ .product div{
+     margin-left: 1.1em;
+     margin-top: -1em;
+ }
+ .product p{
+    color: #787885;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 70%;
+ }
