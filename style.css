@@ -50,6 +50,7 @@ nav .logo h2{
      background-size: contain;
      width: 120%;
      margin-top: -4em;
+     transition: ease-in .3s;
  }
  main .image img:hover{
      transform: scale(1.2);
