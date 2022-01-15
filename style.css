@@ -6,31 +6,10 @@
  ---------------------------------*/
 nav{
     display: flex;
-    justify-content: space-between;
-}
-nav .logo {
-    margin-left: 8em;
+    justify-content: center;
 }
 nav .logo h2{
     font-family: 'Be Vietnam Pro';
-}
-.menu {
-    margin-right: 5em;
-    line-height: 2;
-}    
-nav .menu ul{
-   list-style-type: none;
-}
-nav .menu ul li{
-    display: inline-block;
-    margin-right: 2em;
-}
-nav .menu ul li a{
-    text-decoration: none;
-    color: #000;
-    font-size: 1.2em;
-    font-family: 'Be Vietnam Pro';
-    font-weight: 500;
 }
 /*--------------------------------
          Main Section Style 
@@ -55,10 +34,15 @@ nav .menu ul li a{
      display: inline-block;
      padding: .8em 1.5em;
      color: #fff;
-     
+     animation: pulse 1500ms infinite;   
  }
- main .image{
-    
+ @keyframes pulse{
+     0%{
+         box-shadow: #E02C6D 0 0 0 0;
+     }
+     75%{
+        box-shadow: #E02C6D00 0 0 0 16px; 
+     }
  }
  main .image img{
      background-image: url(images/Circle\ design.svg);
@@ -67,6 +51,11 @@ nav .menu ul li a{
      width: 120%;
      margin-top: -4em;
  }
+ main .image img:hover{
+     transform: scale(1.2);
+
+ }
+
 /*--------------------------------
         Products Section Style 
  ---------------------------------*/
@@ -76,6 +65,18 @@ nav .menu ul li a{
  .products> h1{
     text-align: center;
     margin-bottom: 2em;
+ }
+ .products a{
+   display: flex;
+   justify-content: end;
+   margin: 4em 8em;
+   text-decoration: none;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   color: rgba(224, 44, 109, 0.87);
+
+
  }
  .products .product-collections{
     display: grid;
@@ -111,3 +112,151 @@ nav .menu ul li a{
     font-size: 14px;
     line-height: 70%;
  }
+ .review-icon{
+    color:#FB8200;
+ }
+
+ /*--------------------------------
+     Coustomer_Review Section Style 
+ ---------------------------------*/
+ .customers-review h1{
+    text-align: center;
+    margin-bottom: 1.3em;  
+ }
+ .customers-review >div {
+      display: flex;
+ }
+.customers-review >div .review{
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 10px 10px 40px gray;
+      width: 30%;
+      margin-left: 2.5em;
+}
+.customers-review >div .review p{
+    color: #787885;
+    padding: .5em 3em;
+}
+.customers-review >div .review img{
+    width: 150px;
+    display: block;
+    margin: auto;
+    padding-top: 1.5em;
+}
+.customers-review >div .review a{
+    text-decoration: none;
+    color: blue;
+}
+/*--------------------------------
+     Footer Section Style 
+ ---------------------------------*/
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 2em;
+    margin-top: 2em;
+}
+footer h1{
+
+}
+footer .social-icon{
+    margin-left: 10px;
+}
+
+/*--------------------------------
+     Responsive Phone Section Style 
+ ---------------------------------*/
+@media screen and (max-width: 688px){
+/*--------------------------------
+     Responsive Main Section Style 
+ ---------------------------------*/
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main .text{
+        width: 100%;
+        margin-top: -10em;
+        margin-left: .5em;
+        margin-bottom: 5em;
+    }
+    main .text p{
+        width: 94%;
+        text-align: center;
+    }
+    main .text a {
+        margin-left: 5.5em;
+    }
+    main .image{
+        margin-left: .5em;
+    }
+    main .image img{
+        width: 100%;
+    }
+/*--------------------------------------
+     Responsive Products Section Style 
+ --------------------------------------*/
+ .products .product-collections{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 2em;
+    margin-left: 1em;
+ }
+ .product{
+     margin: auto;
+ }
+ .products a{
+    display: flex;
+    justify-content: end;
+    margin: 4em 2em;
+ }
+ /*--------------------------------------
+     Responsive Review Section Style 
+ --------------------------------------*/
+ .customers-review >div {
+    flex-direction: column;
+    margin-left: -4.5em;
+}
+.customers-review >div .review {
+    width: 80%;
+    margin-top: 2em;
+    margin-left: 4.9em;
+}
+}
+/*---------------------------------------------
+     Responsive  Style (Tablet)
+ ----------------------------------------------*/
+@media only screen and (max-width: 993px) and (min-width: 689px){
+    main{
+        margin-top: 5em;
+    }
+    main .text{
+        width: 35%;
+        margin-right: 10em;
+        margin-left: 2em;
+    }
+    main .image{
+    margin-top: 8em;
+    }
+    main .image{
+        margin-left: 0;
+    }
+    main .image img{
+        width: 100%;
+    }
+/*---------------------------------------------
+     Responsive Products Section Style (Tablet)
+ ----------------------------------------------*/
+ .products .product-collections{
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 2em;
+    margin-left: 3em;
+ }
+ /*---------------------------------------------
+     Responsive Review Section Style (Tablet)
+ ----------------------------------------------*/
+ .customers-review >div .review{
+     margin-left: 1.25em;
+ }
+}
