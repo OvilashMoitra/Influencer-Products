@@ -178,9 +178,9 @@ footer a{
         flex-direction: column;
     }
     main .text {
-        width: 100%;
-        margin-top: -10em;
-        margin-left: .3em;
+        width: 90%;
+        margin-top: -8em;
+        margin-left: .1.7em;
         margin-bottom: 5em;
     }
     main .text p{
@@ -191,7 +191,8 @@ footer a{
         margin-left: 5.5em;
     }
     main .image{
-        margin-left: .5em;
+        width: 90%;
+        margin-left: 1em;
         margin-top: 2em;
     }
     main .image img{
