@@ -173,9 +173,13 @@ footer a{
 /*--------------------------------
      Responsive Main Section Style 
  ---------------------------------*/
+    nav{
+        width: 95%;
+    }
     main{
         display: flex;
         flex-direction: column;
+        width: 95%;
     }
     main .text {
         width: 90%;
@@ -201,6 +205,9 @@ footer a{
 /*--------------------------------------
      Responsive Products Section Style 
  --------------------------------------*/
+ .products{
+     width: 95%;
+ }
  .products .product-collections{
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -209,6 +216,12 @@ footer a{
  }
  .product{
      margin: auto;
+     width: 90%;
+ }
+ .product img{
+     width: 90%;
+    padding-left: 10px;
+    margin-top: 10px;
  }
  .products a{
     display: flex;
@@ -218,6 +231,9 @@ footer a{
  /*--------------------------------------
      Responsive Review Section Style 
  --------------------------------------*/
+ .customers-review{
+     width: 95%;
+ }
  .customers-review >div {
     flex-direction: column;
     margin-left: -4.5em;
