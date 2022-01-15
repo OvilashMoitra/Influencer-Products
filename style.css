@@ -163,7 +163,7 @@ footer a{
  ---------------------------------*/
 
 @media screen and (max-width: 688px){
-    
+
 /*--------------------------------
      Responsive Main Section Style 
  ---------------------------------*/
@@ -186,6 +186,7 @@ footer a{
     }
     main .image{
         margin-left: .5em;
+        margin-top: 2em;
     }
     main .image img{
         width: 100%;
