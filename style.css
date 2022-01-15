@@ -53,9 +53,7 @@ nav .logo h2{
  }
  main .image img:hover{
      transform: scale(1.2);
-
  }
-
 /*--------------------------------
         Products Section Style 
  ---------------------------------*/
@@ -75,8 +73,6 @@ nav .logo h2{
    font-weight: bold;
    font-size: 16px;
    color: rgba(224, 44, 109, 0.87);
-
-
  }
  .products .product-collections{
     display: grid;
@@ -98,8 +94,7 @@ nav .logo h2{
     border-radius: 5px;
     margin-left: 15px;
     margin-top: 10px;
-    margin-bottom: 0px;
-    
+    margin-bottom: 0px;   
  }
  .product div{
      margin-left: 1.1em;
@@ -115,7 +110,6 @@ nav .logo h2{
  .review-icon{
     color:#FB8200;
  }
-
  /*--------------------------------
      Coustomer_Review Section Style 
  ---------------------------------*/
@@ -157,17 +151,19 @@ footer {
     padding: 2em;
     margin-top: 2em;
 }
-footer h1{
-
+footer p{
+    color: #D9DBE1;
 }
-footer .social-icon{
+footer a{
     margin-left: 10px;
+    color: white;
 }
-
 /*--------------------------------
      Responsive Phone Section Style 
  ---------------------------------*/
+
 @media screen and (max-width: 688px){
+    
 /*--------------------------------
      Responsive Main Section Style 
  ---------------------------------*/
